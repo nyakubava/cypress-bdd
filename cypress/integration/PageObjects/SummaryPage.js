@@ -37,9 +37,20 @@ class SummaryPage {
 
     static clickSummaryRentButton() {
         cy.get('.btn-primary').click()
-
-
     }
+    static getAlertName() {
+        return cy.get('.alert-danger').contains('Name is required')
+    }
+    static getAlertLastName() {
+        return cy.get('.alert-danger').contains('Last name is required')
+    }
+    static getAlertEmail() {
+        return cy.get('.alert-danger').contains('Email is required')
+    }
+    static getAlertCard() {
+        return cy.get('.alert-danger').contains('Card number is required')
+    }
+
 
 }
 

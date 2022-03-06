@@ -45,6 +45,16 @@ And('I can see text fields for personal information', () => {
     SummaryPage.getSummaryCardNumber();
     SummaryPage.getSummaryEmail();
 })
+And('I can click on Rent button', () => {
+    SummaryPage.clickSummaryRentButton();
+})
+And('I can see alerts for empty fields', () => {
+    SummaryPage.getAlertName();
+    SummaryPage.getAlertLastName();
+    SummaryPage.getAlertCard();
+    SummaryPage.getAlertEmail();
+})
+
 And('I can put Test in Name Test in Last Name, 1234123412341234 in Card number and test@test.com in email field', () => {
 
     SummaryPage.setSummaryName();
